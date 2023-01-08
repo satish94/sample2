@@ -3,7 +3,7 @@ FROM node:latest as node
 WORKDIR /app
 COPY . .
 RUN npm install
-RUN npm run build
+RUN npm run serve
 
 # stage 2
 FROM nginx:alpine
